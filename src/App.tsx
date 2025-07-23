@@ -5,6 +5,7 @@ import Contact from "./Contact/contact";
 import ScrollDownButton from "./component/ScrollDownButton";
 import { Pagination, Autoplay } from "swiper/modules";
 import "./App.css";
+// import useWakeupAPI from "./hooks/useWakeupAPI";
 const aboutData = {
   avatar: "https://same-assets.com/placeholder-avatar.png",
   name: "Phạm Minh Trí",
@@ -20,6 +21,7 @@ const data = [
 ];
 
 export default function App() {
+  // useWakeupAPI();
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   useEffect(() => {
     function handleResize() {

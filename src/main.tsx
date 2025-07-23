@@ -15,9 +15,8 @@ import AdminDashboard from "./Admin_page/AdminDashboard.tsx";
 import RequireAdminAuth from "./RequireAdminAuth.tsx";
 import ScrollToTopButton from "./component/ScrollToTopButton.tsx";
 import TitleUpdater from "./component/TitleUpdater.tsx";
-import useWakeupAPI from "./hooks/useWakeupAPI.ts";
+import Photo from "./Hobby/components/photo.tsx";
 const Root = () => {
-  useWakeupAPI();
   return (
     <div className="min-h-screen flex flex-col bg-[#f2f2f2]">
       <Navbar />
@@ -42,6 +41,7 @@ const Root = () => {
           <Route path="/story" element={<Story />} />
           <Route path="/hobby" element={<Hobby />} />
           <Route path="/work" element={<Work />} />
+          <Route path="/hobby/photo" element={<Photo />} />
         </Routes>
       </div>
       <Footer />
