@@ -1,4 +1,24 @@
 
-body {
+/* body {
   font-family: 'Poppins', sans-serif;
+} */
+@import "tailwindcss";
+
+
+/* import font from file  */
+@font-face {
+  font-family: SVN-Poppins;
+  src: url(./assets/fonts/SVN-Poppins.ttf);
+}
+/* --------------------  */
+@layer base {
+  body {
+    font-family: "SVN-Poppins", sans-serif;
+    background-color: #fafafa;
+  }
+}
+
+@theme {
+  --color-background: #fafafa;
+  --font-poppins: SVN-Poppins, sans-serif;
 }
