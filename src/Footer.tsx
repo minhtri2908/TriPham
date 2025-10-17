@@ -7,7 +7,7 @@ export default function Footer() {
         © 2025 •{' '}
         <a href="/" className="underline decoration-gray-400">Phạm Minh Trí</a>
       </p>
-      <p>Tan Binh district, Ho Chi Minh City, Viet Nam</p>
+      <p>Di An Ward, Ho Chi Minh City, Viet Nam</p>
     </div>
   </footer>
   );
